@@ -11,11 +11,11 @@ import DemoPageLinks from '../components/DemoPageLinks'
 import {
     Container,
     Flex,
-    Heading,
     Button,
     Text,
 } from "@chakra-ui/react"
 import { createBreakpoints } from "@chakra-ui/theme-tools"
+
 const breakpoints = createBreakpoints({
   sm: "30em",
   md: "48em",
@@ -40,7 +40,6 @@ const Demo = () => {
         <Flex height="100vh" py={20}>
             <Text color="white" fontSize={{ base: "24px", md: "32px", lg: "48px" }}>Welcome to the Home page!
               <Text color="white" fontSize={{ base: "16px", md: "24px", lg: "32px" }}>Please login to continue</Text>
-
             </Text>
                 <Button boxShadow="base" style={styles.buttonMargin}>
                     <Link href='/todo'>
